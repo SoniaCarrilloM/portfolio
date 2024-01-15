@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      :root {
+        --primary-color: pink;
+        --box-shadow: 10px 10px 10px 10px rgb(0, 0, 0);
+
+        h2 {
+          background: turquoise;
+        }
+
+        p {
+          color: var(--primary-color);
+          box-shadow: var(--box-shadow);
+        }
+      }
       a {
         color: red;
         text-decoration: none;
@@ -13,6 +26,10 @@
       a:hover {
         color: blue;
         text-decoration: underline;
+      }
+
+      .new-link:hover {
+        color: pink;
       }
 
       a:visited {
@@ -32,7 +49,11 @@
     <br />
     <a href="mailto:carrillo_sonia@hotmail.com">carrillo_sonia@hotmail.com</a>
     <br />
-    <a href="https://www.nytimes.com/">New York Times</a>
+    <a
+      href="https://www.nytimes.com/
+    "
+      >New York Times</a
+    >
 
     <h1>Happy Coding</h1>
     <p>
