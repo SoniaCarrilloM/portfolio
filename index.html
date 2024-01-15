@@ -6,16 +6,25 @@
     <title>Document</title>
     <style>
       :root {
-        --primary-color: pink;
-        --box-shadow: 10px 10px 10px 10px rgb(0, 0, 0);
+        --primary-color: whitesmoke;
+        --box-shadow: 10px 10px 10px 10px rgb(248, 204, 234);
+        --background: rgb(7, 174, 165);
+        --border: 1px solid rgb(164, 164, 240);
+        --border-radius: 30px;
+        --padding: 30px 30px 30px 30px;
+        line-height: 2;
 
         h2 {
           background: turquoise;
         }
 
         p {
-          color: var(--primary-color);
+          background: var(--background);
           box-shadow: var(--box-shadow);
+          color: var(--primary-color);
+          border: var(--border);
+          border-radius: var(--border-radius);
+          padding: var(--padding);
         }
       }
       a {
