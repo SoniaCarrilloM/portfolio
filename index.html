@@ -6,27 +6,49 @@
     <title>Document</title>
     <style>
       :root {
-        --primary-color: whitesmoke;
-        --box-shadow: 10px 10px 10px 10px rgb(248, 204, 234);
-        --background: rgb(7, 174, 165);
-        --border: 1px solid rgb(164, 164, 240);
-        --border-radius: 30px;
-        --padding: 30px 30px 30px 30px;
-        line-height: 2;
-
-        h2 {
-          background: turquoise;
-        }
-
-        p {
-          background: var(--background);
-          box-shadow: var(--box-shadow);
-          color: var(--primary-color);
-          border: var(--border);
-          border-radius: var(--border-radius);
-          padding: var(--padding);
-        }
+        --primary-color: #9871f4;
+        --secondary-color: #ef5e9a;
+        --accent-color: #6ed5d2;
+        --gradient: linear-gradient(to top, #fff 0%, #a6c1ee 100%);
       }
+
+      body {
+        font-family: sans-serif;
+        padding: 0 20px;
+        background: var(--gradient);
+      }
+
+      h1 {
+        text-align: center;
+        font-weight: 900;
+        margin: 0;
+        font-size: 34px;
+        line-height: 48px;
+        color: var(--primary-color);
+      }
+
+      h3 {
+        color: var(--secondary-color);
+      }
+
+      p {
+        background: var(--accent-color);
+        padding: 20px;
+      }
+
+      h2 {
+        background: var(--accent-color);
+      }
+
+      p {
+        background: var(--background);
+        box-shadow: var(--box-shadow);
+        color: var(--primary-color);
+        border: var(--border);
+        border-radius: var(--border-radius);
+        padding: var(--padding);
+      }
+
       a {
         color: red;
         text-decoration: none;
