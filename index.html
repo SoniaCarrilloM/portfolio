@@ -10,12 +10,25 @@
         --secondary-color: #ef5e9a;
         --accent-color: #6ed5d2;
         --gradient: linear-gradient(to top, #fff 0%, #a6c1ee 100%);
+        --border-radius: 30px;
       }
 
       body {
         font-family: sans-serif;
         padding: 0 20px;
         background: var(--gradient);
+      }
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+
+      .link {
+        border: 2px solid rgb(63, 63, 248);
+        border-radius: var(--border-radius);
+        padding: 10px;
       }
 
       h1 {
@@ -70,21 +83,20 @@
   </head>
   <body>
     <h1>My Portfolio</h1>
-    <a href="about.html">About Me</a>
-    <br />
-    <a href="work/websites.html">Websites</a>
-    <br />
-    <a href="#workexperience">Work Experience</a>
-    <br />
-    <a href="about.html#faq">FAQ</a>
-    <br />
-    <a href="mailto:carrillo_sonia@hotmail.com">carrillo_sonia@hotmail.com</a>
-    <br />
-    <a
-      href="https://www.nytimes.com/
-    "
-      >New York Times</a
-    >
+    <ul>
+      <a href="about.html"><div class="link">About Me</div></a>
+      <br />
+      <a href="work/websites.html"><div class="link">Websites</div></a>
+      <br />
+      <a href="#workexperience"><div class="link">Work Experience</div></a>
+      <br />
+      <a href="about.html#faq"><div class="link">FAQ</div></a>
+      <br />
+      <a href="mailto:carrillo_sonia@hotmail.com"
+        ><div class="link">Contact</div></a
+      >
+      <br />
+    </ul>
 
     <h1>Happy Coding</h1>
     <p>
